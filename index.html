@@ -20,12 +20,13 @@
 
 <form class="form-control">
   <select id="ent" name="entertainment">
-      <option value="Weather Search" >Weather Search By City</option>
-      <option value="Movies Search" >Movies Search By Name</option>       
+        <option value="0" >Select</option>
+        <option value="1" >Weather Search By City</option>
+         <option value="2" >Movies Search By Name</option>       
 
   </select> 
-  <input type="text" id="searchMovie" value="Matrix" placeholder="search movie">
-  <button id="subMovie">Search</button> 
+  <input type="text" id="searchMovie" value="Matrix" placeholder="search movie"><span id="error"></span>
+  <button id="subSearch">Search</button> 
 </form>  
 
 <br>  

@@ -1,12 +1,39 @@
 
 $(document).ready(function(){
     console.log("Page Ready");
+
+    //=================================
+   
+
+
+
+    //===================================
        
-    $("#subMovie").click(function(event){
+    $("#subSearch").click(function(event){
     
     event.preventDefault();
-    console.log("Form submitted")
+
+    var selectChoice = $("#ent").val();
+
+   if(selectChoice == "1"){
     
+    weatherForcast();
+    $("#ent").css("border", "");
+    
+   }
+   else if(selectChoice == "2"){
+    $("#error").hide();
+    moviesSearch();
+    $("#ent").css("border", "");
+   }
+   else{
+       $("#ent").css("border", "1px solid red");
+       $("#error").hide();
+   }
+    
+    
+    function moviesSearch(){
+      
     var search = $("#searchMovie").val();
     
     console.log("search: " +search);
@@ -37,8 +64,18 @@ $(document).ready(function(){
     //$("#display").append("<img src=" +gifs[i].images.original.url+"></img>");
     
     });
-    
-    
+
+    }
+
+    function weatherForcast(){
+
+        $("#error").text("Weather Forcast Coming Soon...!");
+
+        
+        
+    }
+        
     });
+
     
     });
