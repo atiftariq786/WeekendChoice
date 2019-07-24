@@ -5,3 +5,97 @@ h3 {
 #error{
 color:red;
 }
+
+
+body {
+    position: relative; 
+}
+#section0 {padding-top:50px;height:100vh;color: #fff; background-image: linear-gradient(-90deg,#1c1c1c, #383838, #1c1c1c);}
+
+#section1 {padding-top:50px;height:100vh;color: #fff; background-image: linear-gradient(-90deg,#1c1c1c, #0a0a0a, #1c1c1c);}
+
+#section2 {padding-top:50px;height:100%;color: #fff; background-color: black;}
+
+#section3 {padding-top:50px;height:100vh;color: #fff; background-image: linear-gradient(-90deg,#656565, #0a0a0a, #1c1c1c);}
+
+@media only screen and (max-width: 1165px) {
+    #section1 {padding-top:50px;height:100%;color: #fff; background-image: linear-gradient(-90deg,#1c1c1c, #0a0a0a, #1c1c1c);}
+    #section2 {padding-top:50px;height:100%;color: #fff; background-color: black;}
+  }
+
+
+.work {
+    position: relative;
+    float: left;
+    width: 300px;
+    margin: 20px 0 25px 20px;
+    overflow: auto;
+  }
+  
+  #aboutMe{
+      width: 100%;
+      margin: 15vh auto 0 auto;
+      text-align: center;
+      display :flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  #homePage{
+    width: 100%;
+    margin: 20vh auto 0 auto;
+    text-align: center;
+  }
+  
+  
+  
+  #icons{
+      font-size: 30px;
+  }
+  #nav-name{
+      color: #52D1DC;
+      font-size: 40px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      font-variant: small-caps;
+      margin-bottom: 10px;
+  }
+  
+  
+  
+
+  
+  
+  a{
+      color: #4DCCBD;
+  }
+
+  b{
+    color:#E98A15;
+  }
+  
+  a:hover{
+      color: #2374AB;
+      font-weight: 700;
+  }
+  .row{
+      margin-left: 100px;
+      margin-top: 20px;
+  }
+  .form-control{
+      width: 400px;
+  }
+  
+
+  #contactInfo{
+      margin: 0 auto 0 auto;
+      width:300px;
+      text-align: center;
+  }
+
+  #email{
+    color:#E98A15;
+    font-weight: 700;
+    margin-top:90px;
+    font-size: 20px;
+  }
