@@ -2,24 +2,31 @@
 $(document).ready(function(){
     console.log("Page Ready");
 
-    //=================================
+    $("#goSection1").hide();
 
     $('select').on('change', function() {
+        event.preventDefault();
+
         if(this.value=="3"){
         $("#error").hide();
             $("#table1").hide();
             $("#searchMovie").hide();
             $("#subSearch").hide();
             $("#goSection1").show();
-        }
-        else{
-            $("#goSection1").hide();
-        }
+            
+       }
+        
+      });
+      
+      $("#goSection1").click(function(){
+        $("#goSection1").hide();
+        $("#table1").show();
+            $("#searchMovie").show();
+            $("#subSearch").show();
+            
+            
       });
      
-
-
-
     //===================================
        
     $("#subSearch").click(function(event){
@@ -32,17 +39,25 @@ $(document).ready(function(){
     
     weatherForcast();
     $("#ent").css("border", "");
+    $("#goSection1").hide();
+    
+    
     
    }
    else if(selectChoice == "2"){
     $("#error").hide();
     moviesSearch();
     $("#ent").css("border", "");
+    $("#goSection1").hide();
+    
+    
    }
    
    else{
-       $("#ent").css("border", "1px solid red");
-       $("#error").hide();
+       $("#ent").css("border", "2px solid red");
+       $("#error").hide();  
+       $("#goSection1").hide();     
+        
    }
     
     //===========Movies Search============================
@@ -80,6 +95,18 @@ $(document).ready(function(){
     });
 
     }
+    
+    //===========Weather Forecast Search==================
+    function weatherForcast(){
+
+        $("#error").text("Weather Forcast Coming Soon...!");
+
+        
+        
+    }  
+        
+    });// On user search
+
     //===========NewYork Time News Search=================
 
     
@@ -138,18 +165,6 @@ $("#searchNyt").click(function(event){
     })
 
 
-
-
-    //===========Weather Forecast Search==================
-    function weatherForcast(){
-
-        $("#error").text("Weather Forcast Coming Soon...!");
-
-        
-        
-    }  
-        
-    });// On user search
 
     
     

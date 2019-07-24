@@ -3,8 +3,8 @@
 <head>
   <title>WeekendChoice</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
   <!---------- Bootstrap link------------>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   
@@ -18,14 +18,14 @@
     
   <!---------- Javascript link------------>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src= "assets/js/app.js"></script>
+  
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
  
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
+        <nav class="navbar navbar-expand-sm fixed-top">  
                 <ul class="navbar-nav">
                   <li class="nav-item">
                      <a class="nav-link" href="#section0">Home</a>
@@ -102,7 +102,7 @@
                           </select> 
                           <input type="text" id="searchMovie" value="Matrix" placeholder="search movie"><span id="error"></span>
                           <button id="subSearch">Search</button>
-                          <button id="goSection1">Go</button> 
+                          <a href="#section1" id="goSection1" type="button" style="width:50px;">Go</a> 
                         </form>  
                         
                         <br> 
@@ -132,16 +132,16 @@
                 </div>
             </div>
 <!------------------------ NYT News Search ----------------------------->
-        <div id="section1" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+        <div id="section1" class="container-fluid" style="padding-top:70px;padding-bottom:70px;">
                 <div id="newsPage">
-                    <div class="jumbotron" style="background:#20315A; color:white;">
+                    <div class="jumbotron" style="background:#20315A; color:white; height:80px; ">
                         <h1 class="text-center">
                           <strong><i class="fa fa-newspaper-o"></i>New York Times Search</strong>
                         </h1>
                       </div>
                 
                     <div class="row">
-                      <div class="col-sm-12">
+                      <div class="col-sm-6">
                       <div class="card">
                         <div class="card-header">
                           <strong>
@@ -184,55 +184,42 @@
                     </div>
                 
                     </div>
-                  </div>
-                <br>
-                
+
                 <!-- Top Article result-->
                 
-                <div class="row">
-                    <div class="col-sm-12">
-                    <div class="card">
-                      <div class="card-header">
+                    
+                    <div class="col-sm-6">
+                        <div id="artResult">
+                      <div class="card">
+                        <div class="card-header">
                         <strong>
-                          <i class="fa fa-article"></i> Top Articles </strong>
+                        <i class="fa fa-article"></i> Top Articles </strong>
                         </div>
-                      <div class="card-body" id="result" >
-                                
-                      
-                    </div>
-                      
-                  </div>
-                
-                  </div>
-                </div>
-                
-                <!-- Footer-->
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <hr>
-                        <h5
-                        class="text-center">
-                        <small>Copyright (C) 2019 By Atif Tariq<i class="fa fa-flag"></i></small></h5>
-                        
+                        <div class="card-body" id="result">                    
                       </div>
-                
+                      
                     </div>
                 
-                    
-                    
+                  </div>
                 </div>
+               
                 
-            </div>
- <!--------------------------- Protfolio ---------------------------------->           
+              </div>
+                            
+          </div>
+                
+        </div>
+ <!-----------------------Games---------------------------------->           
             <div id="section2" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+              <div id="games">
                     <h1>Play Games</h1>
                    
                     
                                      
                                   
                                              
-                                    
-                  </div> 
+                  </div>      
+                </div> 
 <!--------------------------- Contact ---------------------------------->                      
                   <div id="section3" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
                         <div id="contactInfo">
@@ -240,10 +227,28 @@
                               <p id="email">atiftariq786[@]hotmail[.]com</p>
                               <p id="location">San Francisco, California</p>
                           <p id="icons"><a href="https://github.com/atiftariq786"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/atif-tariq-5b00b089/"><i class="fab fa-linkedin" style="margin-left:10px;"></i></a></p>
+                            <!-- Footer-->
+                    <div class="row">
+                        <div class="col-sm-12" >
+                          <hr>
+                          <p>
+                          <small>Copyright (C) 2019 By Atif Tariq <i class="fa fa-flag"></i></small></p>
+                          
                         </div>
+                  
                       </div>
 
 
+                        </div>
+                      
+                      </div>
+                       
+
+<!-- Link jquery CDN with html-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!--Link javascript file with html-->
+<script src="assets/js/app.js"></script>
 
 </body>
 </html>

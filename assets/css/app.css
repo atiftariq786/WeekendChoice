@@ -1,16 +1,19 @@
 h3 {
-    color:blue;
+    color:orange;
 }
 
 #error{
 color:red;
 }
-
+.navbar{
+    background: rgb(2, 74, 122) ;
+}
 
 body {
     position: relative; 
 }
-#section0 {padding-top:50px;height:100vh;color: #fff; background-image: linear-gradient(-90deg,#1c1c1c, #383838, #1c1c1c);}
+
+#section0 {padding-top:50px;height:100vh;color: #fff; background-color: black; }
 
 #section1 {padding-top:50px;height:100vh;color: #fff; background-image: linear-gradient(-90deg,#1c1c1c, #0a0a0a, #1c1c1c);}
 
@@ -22,32 +25,42 @@ body {
     #section1 {padding-top:50px;height:100%;color: #fff; background-image: linear-gradient(-90deg,#1c1c1c, #0a0a0a, #1c1c1c);}
     #section2 {padding-top:50px;height:100%;color: #fff; background-color: black;}
   }
-
-
-.work {
-    position: relative;
-    float: left;
-    width: 300px;
-    margin: 20px 0 25px 20px;
-    overflow: auto;
-  }
-  
-  #aboutMe{
-      width: 100%;
-      margin: 15vh auto 0 auto;
-      text-align: center;
-      display :flex;
-      justify-content: center;
-      align-items: center;
-  }
-
   #homePage{
     width: 100%;
-    margin: 20vh auto 0 auto;
+    
     text-align: center;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+   
   }
-  
-  
+ 
+  #newsPage{
+        
+    width: 100%;
+    text-align: center;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+      
+  }
+  #artResult{
+      
+        
+    height: calc(100vh);
+    overflow-y: auto;
+      
+  }
+  #games{
+    width: 100%;
+    text-align: center;
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+    
+    }
+    .card{
+        color:black;
+        text-align: left;
+    }
+
   
   #icons{
       font-size: 30px;
@@ -61,11 +74,7 @@ body {
       margin-bottom: 10px;
   }
   
-  
-  
-
-  
-  
+   
   a{
       color: #4DCCBD;
   }
@@ -78,13 +87,7 @@ body {
       color: #2374AB;
       font-weight: 700;
   }
-  .row{
-      margin-left: 100px;
-      margin-top: 20px;
-  }
-  .form-control{
-      width: 400px;
-  }
+  
   
 
   #contactInfo{
