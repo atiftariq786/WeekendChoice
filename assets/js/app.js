@@ -10,8 +10,10 @@ $(document).ready(function(){
             $("#table1").hide();
             $("#searchMovie").hide();
             $("#subSearch").hide();
-          
-           window.location.href = "pages/nyt.html";
+            $("#goSection1").show();
+        }
+        else{
+            $("#goSection1").hide();
         }
       });
      
